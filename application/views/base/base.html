@@ -1,0 +1,19 @@
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>2048</title>
+	<link rel="stylesheet" type="text/css" href="<{css_url('2048.css')}>" />
+	<{load_js('lib/jquery.js')}>
+	<{load_js('lib/jquery.UI.js')}>
+</head>
+<body>
+	<{include file='base/header.html'}>
+	<{include file=$page}>
+    <{include file='base/footer.html'}>
+
+    <{foreach from=load_js(TRUE) item=js_file}>
+    <script type="text/javascript" src="<{js_url($js_file)}>"></script>
+    <{/foreach}>
+</body>
+</html>

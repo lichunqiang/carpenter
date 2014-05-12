@@ -19,6 +19,9 @@ class Pages extends MY_Controller {
 	 */
 	public function index()
 	{
+		$this->pdo = $this->load->database('pdo', true);
+		$stmt = $this->db->query("SELECT * FROM user_info");  
+		var_dump($stmt->result());
 		$this->load->view('welcome_message');
 	}
 	public function view($user_id = '') 

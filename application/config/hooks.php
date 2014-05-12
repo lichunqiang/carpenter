@@ -12,7 +12,7 @@
 
 $hook['pre_controller'] = array(
                                 'class'    => '',
-                                'function' => 'my_test',
+                                'function' => 'initHelpers',
                                 'filename' => 'pre_controller.php',
                                 'filepath' => 'hooks',
                                 'params'   => array('beer', 'wine', 'snacks')

@@ -44,7 +44,7 @@
 | The $active_record variables lets you determine whether or not to load
 | the active record class
 */
-
+//$this->load->database('pdo', true); $active_group自动选择pdo
 $active_group = 'default';
 $active_record = TRUE;
 
@@ -65,5 +65,10 @@ $db['default']['autoinit'] = TRUE; //当数据库类库(database library)被载�
 $db['default']['stricton'] = FALSE; // 是否强制使用 "Strict Mode" 连接, 在开发程序时，使用 strict SQL 是一个好习惯。
 //$db['default']['port'] = 5432;
 
+$db['pdo']['hostname']   = 'mysql:host=localhost;dbname=ec_gibon';
+$db['pdo']['username']   = 'root';
+$db['pdo']['password']   = '';
+$db['pdo']['database']   = 'ec_gibon';
+$db['pdo']['dbdriver']   = 'pdo';
 /* End of file database.php */
 /* Location: ./application/config/database.php */

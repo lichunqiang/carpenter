@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= '';
+$config['base_url']	= 'http://www.carpenter.com';
 
 /*
 |--------------------------------------------------------------------------
@@ -69,7 +69,7 @@ $config['url_suffix'] = 'html';
 | than english.
 |
 */
-$config['language']	= 'english';
+$config['language']	= 'chinese';//english';
 
 /*
 |--------------------------------------------------------------------------
@@ -92,7 +92,7 @@ $config['charset'] = 'UTF-8';
 |
 */
 //是否启用钩子
-$config['enable_hooks'] = FALSE;
+$config['enable_hooks'] = TRUE;
 
 
 /*
